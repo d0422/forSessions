@@ -1,8 +1,9 @@
 import DOM from './DOM.mjs';
 
 export default class Div extends DOM {
-  constructor(inputText) {
+  constructor(inputText, className) {
     super('div', inputText);
-    document.body.appendChild(this.node);
+
+    if (className) this.node.classList.add(className);
   }
 }

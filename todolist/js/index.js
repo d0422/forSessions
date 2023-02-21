@@ -1,8 +1,9 @@
-import Div from './Div.mjs';
+import Todo from './Todo.mjs';
 const input = document.querySelector('input');
+
 input.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
-    new Div(input.value);
+    new Todo(input.value);
     input.value = '';
   }
 });
